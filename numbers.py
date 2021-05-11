@@ -11,7 +11,7 @@ number = int(input())
 
 while game == True:
     if number != magic_number:
-        chances -= 1
+        chances = chances - 1
         number = int(input('Guess again: '))
     elif number == magic_number:
         print('Genius!!')
@@ -23,7 +23,6 @@ while game == True:
 else:
     if game == False:
         print('Thanks for playing.')
-        break
 
         
         
